@@ -181,6 +181,14 @@ body {
   color: #F16D7F;
 }
 
+.header__menu_list__title:hover {
+  color: #EF5B70;
+}
+
+.header__menu_list__title:active {
+  color: #000000;
+}
+
 .header__menu_sublist__item {
   margin: 0 0 11px 22px;
 }
@@ -191,6 +199,14 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
+}
+
+.header__menu_sublist__link:hover {
+  color: #EF5B70;
+}
+
+.header__menu_sublist__link:active {
+  color: #000000;
 }
 
 .header__profile_btn,

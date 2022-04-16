@@ -1380,7 +1380,17 @@ body {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
+  color: #000000;
+}
+
+.cart__order_placement__input::placeholder {
   color: #B1B1B1;
+}
+
+.cart__subnotation_input:focus-visible,
+.cart__order_placement__input:focus-visible {
+  border: 1px solid #ff6a6a;
+  outline: none;
 }
 
 .cart__product_list__group_btn {

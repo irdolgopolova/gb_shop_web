@@ -1,0 +1,50 @@
+@import "variables.less";
+@import "mixins.less";
+@import "main.less";
+@import "cards.less";
+@import "filters.less";
+@import "our_advantages.less";
+@import "breadcrumb.less";
+
+.products_catalog {
+    margin-top: 65px;
+}
+
+.pagination {
+    margin-top: 48px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 11px 16px;
+        border: @light_gray_border;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 284px;
+        list-style: none;
+    }
+
+    &__item {
+        &:nth-last-child(3) {
+            margin: 0 -18px;
+        }
+
+        &_link {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: @text_light_gray;
+
+            .object_effects_with_svg(@color_pink, @color_black);
+        }
+
+        .target {
+            color: @color_dark_pink;
+        }
+    }
+}
+
+

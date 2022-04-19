@@ -1,0 +1,84 @@
+.flex_base(@flex_direction:row, @justify_content:normal, @align_items:normal) {
+    display: flex;
+    flex-direction: @flex_direction;
+    justify-content: @justify_content;
+    align-items: @align_items;
+}
+
+.strict_size(@width:auto, @height:auto) {
+    width: @width;
+    height: @height;
+    box-sizing: border-box;
+}
+
+.size(@width:auto, @min_height:0) {
+    width: @width;
+    min-height: @min_height;
+    box-sizing: border-box;
+}
+
+.limited_size(@max_width) {
+    width: 100%;
+    max-width: @max_width;
+    box-sizing: border-box;
+}
+
+.limited_size(@max_width, @min_height) {
+    width: 100%;
+    max-width: @max_width;
+    min-height: @min_height;
+    box-sizing: border-box;
+}
+
+.limited_size_by_height(@max_height) {
+    height: 100%;
+    max-height: @max_height;
+    box-sizing: border-box;
+}
+
+.text_base(
+    @font_weight: 400,
+    @font_size: 14px,
+    @line_height: 17px,
+    @color: @color_black,
+    @text_transform: none
+) {
+    font-style: normal;
+    font-weight: @font_weight;
+    font-size: @font_size;
+    line-height: @line_height;
+    color: @color;
+    text-transform: @text_transform;
+}
+
+.svg_effects(@hover_color, @active_color) {
+    &:hover {
+        fill: @color_pink;
+    }
+
+    &:active {
+        fill: @color_black;
+    }
+}
+
+.object_effects_with_svg(@hover_color, @active_color) {
+    &:hover {
+        color: @color_pink;
+        fill: @color_pink;
+    }
+
+    &:active {
+        color: @color_black;
+        fill: @color_black;
+    }
+}
+
+.object_effects(@hover_color, @active_color) {
+    &:hover {
+        color: @color_pink;
+    }
+
+    &:active {
+        color: @color_black;
+    }
+}

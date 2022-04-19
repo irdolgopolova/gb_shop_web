@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    max-width: @max_width_content;
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 75px;
+    background-color: @color_light_black;
+
+    &__container {
+        .flex_base(@justify_content: space-between);
+        padding: 18px 0 0;
+    }
+
+    &__left_part,
+    &__right_part {
+        .flex_base(@align_items: flex-end);
+    }
+
+    &__right_part {
+        margin: 0 8px 0 0;
+    }
+
+    &__logo_img {
+        .size(auto; 38px);
+    }
+
+    &__logo:hover &__logo_img {
+        .size(42px; 36px);
+        padding: 1px;
+    }
+
+    &__profile_btn,
+    &__basket_btn {
+        margin: 0 0 0 33px;
+    }
+
+    &__search_icon,
+    &__menu_icon,
+    &__basket_icon,
+    &__profile_icon {
+        fill: @color_white;
+
+        .svg_effects(@color_pink, @color_white);
+    }
+
+    &__search {
+        &_form {
+            position: relative;
+            .flex_base();
+            margin: 0 0 0 41px;
+        }
+
+        &_label {
+            display: block;
+        }
+
+        &_input {
+            .strict_size(0, 0);
+            min-height: 0;
+            padding: 5px;
+            margin: 0 0 0 24px;
+            outline: none;
+            border: none;
+            text-transform: capitalize;
+            background-color: transparent;
+            color: @color_white;
+
+            &:focus {
+                .size(250px, 28px);
+                transition: width 1s ease;
+                border: @border_bold_white;
+            }
+
+            &::-webkit-search-decoration,
+            &::-webkit-search-cancel-button,
+            &::-webkit-search-results-button,
+            &::-webkit-search-results-decoration,
+            &::-webkit-clear-button {
+            -webkit-appearance: none;
+            display: none;
+            }
+        }
+    }
+
+    #header__menu_switch {
+        display: none;
+
+        &:checked ~ .header__menu_container {
+            display: block;
+        }
+    }
+
+    &__menu {
+        &_container {
+            display: none;
+            position: absolute;
+            justify-content: left;
+            top: 76px;
+            .limited_size(232px, 764px);
+            margin: 0 0 0 166px;
+            padding: 16px 16px 16px 32px;
+            z-index: 999;
+            background: @color_white;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        }
+
+        &_list {
+            list-style-type: none;
+            text-align: left;
+            width: 100%;
+
+            &__item {
+                margin: 20px 0 0;
+
+                &_close_btn {
+                    text-align: right;
+                }
+
+                &_title {
+                    margin: 0 0 24px;
+                }
+            }
+
+            &__close_btn {
+                fill: @text_deep_gray;
+            }
+
+            &__title {
+                text-decoration: none;
+
+                .text_base(
+                    @color: @color_pink,
+                    @text_transform: uppercase
+                );
+
+                .object_effects(@color_dark_pink, @color_black);
+            }
+        }
+
+        &_title {
+            .text_base (
+                @font_weight: 700,
+                @text_transform: uppercase
+            )
+        }
+
+        &_sublist {
+            list-style-type: none;
+            margin: 12px 0 0;
+
+            &__item {
+                margin: 0 0 11px 22px;
+            }
+
+            &__link {
+                text-decoration: none;
+                .text_base (
+                    @color: @text_deep_gray
+                );
+
+                .object_effects(@color_dark_pink, @color_black);
+            }
+        }
+    }
+
+    &__profile_btn {
+        text-decoration: none;
+    }
+
+    &__basket_btn {
+        position: relative;
+        text-decoration: none;
+
+        &__counter {
+            display: block;
+            position: absolute;
+            .strict_size(19px, 19px);
+            top: -8px;
+            right: -10px;
+            padding: 2px;
+            border: 1px;
+            border-radius: 50%;
+            background-color: @color_pink;
+            .text_base (
+                @font_size: 12px,
+                @line_height: 14px,
+                @color: @color_white
+            );
+            text-align: center;
+        }
+    }
+}
+
+.subscribe {
+    min-height: 448px;
+    background-image: url(../img/footer_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__container {
+        .flex_base(@justify_content:space-between, @align_items:flex-end);
+        padding: 97px 0 0;
+    }
+
+    &__info {
+        .limited_size(360px);
+        text-align: center;
+
+        &_img {
+            margin: 0 0 26px;
+        }
+
+        &_txt {
+            .text_base(
+                @font_size: 20px,
+                @line_height: 24px,
+                @color: @color_dark_blue,
+            );
+            text-align: center;
+
+            &_italic {
+                font-style: italic;
+            }
+        }
+    }
+
+    &__form {
+        margin: 27px 0 0;
+
+        &_wrp {
+            .limited_size(356px);
+            margin: 0 96px 0 0;
+        }
+
+        &_text {
+            .text_base(
+                @font_size: 18px,
+                @line_height: 30px,
+                @color: @color_dark_blue,
+                @text_transform: uppercase,
+            );
+            text-align: center;
+        }
+
+        &_header {
+            .text_base(
+                @font_weight: 700,
+                @font_size: 24px,
+                @line_height: 40px,
+                @color: @color_dark_blue,
+                @text_transform: uppercase
+            );
+            text-align: center;
+        }
+
+        &_email {
+            .limited_size(256px, 49px);
+            padding: 10px 22px;
+            background-color: @background_gray;
+            border: none;
+            border-radius: 24px 0 0 24px;
+
+            &::placeholder {
+                .text_base(@color: @color_dark_blue);
+                opacity: 0.67;
+            }
+
+            &:focus-visible {
+                outline: none;
+                border: 1px solid #ff6a6a;
+            }
+        }
+
+        &_btn {
+            .limited_size(100px, 49px);
+            .text_base(@color: @color_white);
+            margin: 0 0 0 -4px;
+            padding: 10px 22px;
+            border-radius: 0 24px 24px 0;
+            border: none;
+            background-color: @color_pink;
+
+            &:hover {
+                background-color: @color_white;
+                color: @color_pink;
+                border: @border_orange_pink;
+            }
+
+            &:active {
+                background-color: @color_pink;
+                color: @color_white;
+            }
+        }
+    }
+}
+
+.footer {
+    &__bottom_part {
+        background-color: @color_dark_blue;
+        .size(@min_height:79px);
+        padding: 24px 0;
+
+        &_container {
+            .flex_base(@justify_content:space-between, @align_items:center);
+        }
+    }
+
+    &__copirate_txt {
+        .text_base(
+            @font_size: 16px,
+            @line_height: 19px,
+            @color: @text_extra_light_gray,
+        );
+    }
+
+    &__social_networks {
+        &__list {
+            list-style-type: none;
+            .flex_base();
+        }
+
+        &__icon {
+            margin: 0 7px 0 0;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            display: block;
+            .strict_size(32px, 32px);
+            padding: 8px 0;
+            text-align: center;
+            fill: @color_black;
+            background-color: @color_white;
+
+            &:hover {
+                background-color: @color_pink;
+                fill: @color_white;
+            }
+
+            &:active {
+                background-color: @color_white;
+                fill: @color_pink;
+            }
+        }
+    }
+}

@@ -61,7 +61,7 @@ body {
 .header__menu_icon:active,
 .header__basket_icon:active,
 .header__profile_icon:active {
-  fill: #000000;
+  fill: #ffffff;
 }
 .header__search_form {
   position: relative;
@@ -150,7 +150,7 @@ body {
   text-transform: uppercase;
 }
 .header__menu_list__title:hover {
-  color: #f16d7f;
+  color: #ef5b70;
 }
 .header__menu_list__title:active {
   color: #000000;
@@ -180,7 +180,7 @@ body {
   text-transform: none;
 }
 .header__menu_sublist__link:hover {
-  color: #f16d7f;
+  color: #ef5b70;
 }
 .header__menu_sublist__link:active {
   color: #000000;
@@ -645,7 +645,7 @@ body {
   text-decoration: none;
 }
 .filters__menu_sublist__link:hover {
-  color: #f16d7f;
+  color: #ef5b70;
 }
 .filters__menu_sublist__link:active {
   color: #000000;

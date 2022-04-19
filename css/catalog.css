@@ -673,6 +673,12 @@ body {
 .filters__switch_item:last-child {
   margin: 0;
 }
+.filters__switch_item__small {
+  margin: 0 23px 0 0;
+}
+.filters__switch_item__small:last-child {
+  margin: 0;
+}
 .filters__switch_label {
   text-decoration: none;
   font-style: normal;
@@ -731,6 +737,11 @@ body {
   color: #6f6e6e;
   text-transform: uppercase;
   margin: 0 0 0 9.5px;
+}
+#filters__color_switch,
+#filters__size_switch,
+#filters__quantity_switch {
+  display: none;
 }
 .our_advantages {
   margin: 95px 0 0;
@@ -844,13 +855,15 @@ body {
 }
 .pagination__list {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: normal;
+  width: 100%;
+  max-width: 284px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 11px 16px;
   border: 1px solid #ebebeb;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 284px;
   list-style: none;
 }
 .pagination__item:nth-last-child(3) {
@@ -863,6 +876,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #c4c4c4;
+  text-transform: none;
 }
 .pagination__item_link:hover {
   color: #f16d7f;

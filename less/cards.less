@@ -14,14 +14,12 @@
 
         &_additional {
             margin: 6px 0 0;
-            .text_base(
-                @color: @text_gray,
-            );
+            .text_base(@color: @text_gray);
         }
     }
 
     &__card {
-        .limited_size(@max_width: 360px, @min_height: 581px);
+        .limited_size(360px, 581px);
         margin: 0 0 30px;
         background-color: @background_light_gray;
 
@@ -120,11 +118,11 @@
 
         &:hover {
             .product_list__card_img {
-               filter: brightness(33%);
-            }
+                filter: brightness(33%);
 
-            .product_list__card_img_btn {
-                display: flex;
+                &_btn {
+                    display: flex;
+                }
             }
         }
 

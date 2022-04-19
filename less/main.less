@@ -254,13 +254,7 @@ body {
         }
 
         &_header {
-            .text_base(
-                @font_weight: 700,
-                @font_size: 24px,
-                @line_height: 40px,
-                @color: @color_dark_blue,
-                @text_transform: uppercase
-            );
+            .text_base(700, 24px, 40px, @color_dark_blue, uppercase);
             text-align: center;
         }
 
@@ -278,7 +272,7 @@ body {
 
             &:focus-visible {
                 outline: none;
-                border: 1px solid #ff6a6a;
+                border: @border_orange_pink;
             }
         }
 

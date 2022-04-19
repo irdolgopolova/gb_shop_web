@@ -38,13 +38,7 @@
 
         &_small {
             display: block;
-            .text_base(
-                @font_weight: 400,
-                @font_size: 32px,
-                @line_height: 38px,
-                @color: inherit,
-                @text_transform: uppercase
-            );
+            .text_base(400, 32px, 38px, inherit, uppercase);
         }
 
         &_pink {
@@ -113,10 +107,7 @@
     }
 
     &_accesories {
-        .limited_size(
-            @max_width: @max_width_content,
-            @min_height: 180px
-        );
+        .limited_size(@max_width_content, 180px);
         margin: 0;
         background-image: url(../img/category_accesories.png);
     }
@@ -132,13 +123,7 @@
         }
 
         &__text {
-            .text_base(
-                @font_weight: 700,
-                @font_size: 24px,
-                @line_height: 29px,
-                @color: @color_pink,
-                @text_transform: uppercase
-            );
+            .text_base(700, 24px, 29px, @color_pink, uppercase);
         }
     }
 }

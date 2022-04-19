@@ -673,6 +673,12 @@ body {
 .filters__switch_item:last-child {
   margin: 0;
 }
+.filters__switch_item__small {
+  margin: 0 23px 0 0;
+}
+.filters__switch_item__small:last-child {
+  margin: 0;
+}
 .filters__switch_label {
   text-decoration: none;
   font-style: normal;
@@ -731,6 +737,11 @@ body {
   color: #6f6e6e;
   text-transform: uppercase;
   margin: 0 0 0 9.5px;
+}
+#filters__color_switch,
+#filters__size_switch,
+#filters__quantity_switch {
+  display: none;
 }
 .breadcrumb {
   background-color: #f8f3f4;
@@ -934,17 +945,6 @@ body {
 .product_list__btn_add__icon {
   height: 24px;
   margin: 0 23px 0 0;
-}
-.filters__switch_item__small {
-  margin: 0 23px 0 0;
-}
-.filters__switch_item__small:last-child {
-  margin: 0;
-}
-#filters__color_switch,
-#filters__size_switch,
-#filters__quantity_switch {
-  display: none;
 }
 .recommended_products {
   padding: 129px 0;

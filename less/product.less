@@ -70,13 +70,7 @@
 
         &__sub_title {
             margin: 28px 0 0;
-            .text_base(
-                @font_weight: 300,
-                @font_size: 18px,
-                @line_height: 22px,
-                @color: @text_extra_darkest_gray,
-                @text_transform: uppercase
-            );
+            .text_base(300, 18px, 22px, @text_extra_darkest_gray, uppercase);
         }
 
         &__note {
@@ -140,20 +134,6 @@
             margin: 0 23px 0 0;
         }
     }
-}
-
-.filters__switch_item__small {
-    margin: 0 23px 0 0;
-
-    &:last-child {
-        margin: 0;
-    }
-}
-
-#filters__color_switch,
-#filters__size_switch,
-#filters__quantity_switch {
-    display: none;
 }
 
 .recommended_products {

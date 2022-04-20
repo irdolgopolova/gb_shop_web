@@ -809,6 +809,9 @@ body {
 .breadcrumb__chain_list__item_link:active {
   color: #000000;
 }
+.product_catalog {
+  margin-top: 65px;
+}
 .product_introduction__container {
   display: flex;
   flex-direction: row;

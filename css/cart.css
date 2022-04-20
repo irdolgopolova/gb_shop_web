@@ -685,8 +685,8 @@ body {
   color: #ffffff;
 }
 #close-btn-product3,
-#close-btn-product7,
+#close-btn-product14,
 #close-btn-product3:checked ~ .product_3,
-#close-btn-product7:checked ~ .product_7 {
+#close-btn-product14:checked ~ .product_14 {
   display: none;
 }

@@ -530,7 +530,11 @@ body {
   text-transform: none;
 }
 .registration__submit_btn {
-  padding: 16px 66px 17px 29px;
+  width: 100%;
+  max-width: 167px;
+  box-sizing: border-box;
+  max-height: 50px;
+  padding: 16px 27px 17px;
   background: #f16d7f;
   border: none;
   font-style: normal;
@@ -539,15 +543,21 @@ body {
   line-height: 17px;
   color: #ffffff;
   text-transform: uppercase;
+  fill: #ffffff;
 }
-.registration__submit_btn__txt::after {
-  content: '';
-  position: absolute;
-  width: 17px;
-  height: 10px;
-  box-sizing: border-box;
-  margin: 4px 20px;
-  background-image: url(../img/arrow.svg);
+.registration__submit_btn:hover {
+  background-color: #ffffff;
+  color: #f16d7f;
+  border: 1px solid #ff6a6a;
+  fill: #f16d7f;
+}
+.registration__submit_btn:active {
+  background-color: #f16d7f;
+  color: #ffffff;
+  fill: #ffffff;
+}
+.registration__submit_btn__icon {
+  margin: 0 0 0 19px;
 }
 .registration__perks_container {
   width: 100%;

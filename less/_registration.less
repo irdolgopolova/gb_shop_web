@@ -94,20 +94,32 @@
     }
 
     &__submit_btn {
-        padding: 16px 66px 17px 29px;
+        .limited_size(167px);
+        max-height: 50px;
+        padding: 16px 27px 17px;
         background: @color_pink;
         border: none;
         .text_base(
             @color: @color_white,
             @text_transform: uppercase
         );
+        fill: @color_white;
 
-        &__txt::after {
-            content: '';
-            position: absolute;
-            .strict_size(17px, 10px);
-            margin: 4px 20px;
-            background-image: url(../img/arrow.svg);
+        &:hover {
+            background-color: @color_white;
+            color: @color_pink;
+            border: @border_orange_pink;
+            fill: @color_pink;
+
+        }
+        &:active {
+            background-color: @color_pink;
+            color: @color_white;
+            fill: @color_white;
+        }
+
+        &__icon {
+            margin: 0 0 0 19px
         }
     }
 

@@ -1,0 +1,34 @@
+.pagination {
+    margin: 48px 0 0;
+
+    &__list {
+        .flex_base(@justify_content:space-between);
+        .limited_size(284px);
+        margin: 0 auto;
+        padding: 11px 16px;
+        border: @border_light_gray;
+        list-style: none;
+    }
+
+    &__item {
+        &:nth-last-child(3) {
+            margin: 0 -18px;
+        }
+
+        &_link {
+            text-decoration: none;
+            .text_base(
+                @font_weight: 300,
+                @font_size: 16px,
+                @line_height: 19px,
+                @color: @text_light_gray
+            );
+
+            .object_effects_with_svg(@color_pink, @color_black);
+        }
+
+        .target {
+            color: @color_dark_pink;
+        }
+    }
+}

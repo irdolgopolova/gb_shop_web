@@ -913,11 +913,11 @@ body {
   position: absolute;
   justify-content: left;
   top: 76px;
+  right: 0;
   width: 100%;
   max-width: 232px;
   min-height: 764px;
   box-sizing: border-box;
-  margin: 0 0 0 166px;
   padding: 16px 16px 16px 32px;
   z-index: 999;
   background: #ffffff;

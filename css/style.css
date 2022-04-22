@@ -497,12 +497,6 @@
   background-color: #f16d7f;
   color: #ffffff;
 }
-#close-btn-product3,
-#close-btn-product14,
-#close-btn-product3:checked ~ .product_3,
-#close-btn-product14:checked ~ .product_14 {
-  display: none;
-}
 .category {
   margin: 65px 0 0;
 }

@@ -372,7 +372,7 @@
   line-height: 22px;
   color: #656565;
   text-transform: none;
-  text-align: center;
+  text-align: right;
 }
 .cart__subnotation_input:focus-visible {
   border: 1px solid #ff6a6a;

@@ -1,0 +1,42 @@
+.banner {
+    background-color: @background_pink;
+
+    &__container {
+        .flex_base();
+        min-height: 764px;
+        background-image: url(../img/main-man.png);
+        background-repeat: no-repeat;
+        background-position-x: -220px;
+        background-color: transparent;
+    }
+
+    &__text {
+        position: relative;
+        margin: auto 0 auto 662px;
+        .limited_size(@max_width: 377px);
+        .text_base(
+            @font_weight: 900,
+            @font_size: 48px,
+            @line_height: 58px,
+            @color: @color_light_black,
+            @text_transform: uppercase
+        );
+
+        &::before {
+            position: absolute;
+            left: -28px;
+            .strict_size (12px, 96px);
+            background-color: @color_pink;
+            content: "";
+        }
+
+        &_small {
+            display: block;
+            .text_base(400, 32px, 38px, inherit, uppercase);
+        }
+
+        &_pink {
+            color: @color_pink;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.our_advantages {
+    margin: 95px 0 0;
+    background-color: @color_dark_blue;
+
+    &__list {
+        .flex_base(@justify_content:space-between);
+        padding: 0 20px;
+        list-style-type: none;
+    }
+
+    &__card {
+        .limited_size(316px);
+        padding: 104px 0;
+        text-align: center;
+    }
+
+    &__text {
+        margin: 16px 0 0;
+        .text_base(
+            @font_size: 20px,
+            @line_height: 24px,
+            @color: @text_extra_light_gray
+        );
+
+        &_description {
+            margin: 16px 0 0;
+            .text_base(
+                @font_weight: 300,
+                @color: @text_extra_light_gray
+            );
+            text-align: center;
+        }
+    }
+}

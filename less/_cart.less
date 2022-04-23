@@ -1,0 +1,265 @@
+
+.order__container {
+    .flex_base(@justify_content: space-between);
+}
+
+.cart {
+    &__basket_list {
+        margin: 96px 0 129px;
+    }
+
+    &__product_list {
+        .limited_size(652px);
+
+        &__card {
+            .flex_base();
+            .limited_size(652px);
+            max-height: 306px;
+            margin: 0 0 40px;
+            background-color: @color_white;
+            filter: drop-shadow(17px 19px 24px @filter_color_black);
+        }
+
+        &__group_btn {
+            .flex_base(@justify_content: space-between);
+            margin: 73px 0 0;
+        }
+
+        &__btn {
+            padding: 16px 39px;
+            border: @border_gray;
+            box-sizing: border-box;
+            .text_base(
+                @font_weight: 300,
+                @text_transform: uppercase
+            );
+            text-align: center;
+            background: @color_white;
+
+            &:hover {
+              border: @border_dark_pink;
+              background-color: @color_pink;
+              color: @color_white;
+            }
+
+            &:active {
+              border: @border_dark_pink;
+              background-color: @color_white;
+              color: @color_pink;
+            }
+        }
+    }
+
+    &__img {
+        .limited_size_by_height(306px);
+        background-size: cover;
+    }
+
+    &__notation {
+        width: 100%;
+        padding: 23px 20px 23px 31px;
+        .text_base(
+            @font_size: 22px,
+            @line_height: 26px,
+            @color: @text_darkest_gray,
+        );
+
+        &_title {
+            .limited_size(200px);
+            margin: 0 0 42px;
+            .text_base(
+                @font_size: 24px,
+                @line_height: 29px,
+                @color: @color_light_black,
+                @text_transform: uppercase
+            );
+        }
+
+        &__close_btn {
+            float: right;
+            fill: @text_darkest_gray;
+            width: 18px;
+        }
+
+        &_label:hover &__close_btn {
+            fill: @color_pink;
+        }
+
+        &_label:hover &__close_btn {
+            fill: @color_orange_pink;
+        }
+    }
+
+    &__subnotation {
+        &_txt {
+            margin: 0 0 6px;
+
+            &__price {
+                color: @text_pink;
+            }
+
+            &__value {
+                color: @text_darkest_gray;
+            }
+        }
+
+        &_input {
+            .limited_size(44px);
+            margin: 0 0 0 26px;
+            border: @border_extra_light_gray;
+            .text_base(
+                @font_size: 18px,
+                @line_height: 22px,
+                @color: @text_darkest_gray,
+            );
+            text-align: center;
+
+            &:focus-visible {
+                border: @border_orange_pink;
+                outline: none;
+            }
+        }
+    }
+
+    &__order_placement {
+        .limited_size(360px);
+
+        &__title_form {
+            margin: 18px 0 20px;
+            .text_base(
+                @font_weight: 300,
+                @font_size: 16px,
+                @line_height: 19px,
+                @color: @color_light_black,
+                @text_transform: uppercase
+            );
+        }
+
+        &__input {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 17px 15px;
+            margin: 0 0 20px;
+            border: @border_gray;
+            .text_base(
+                @font_weight: 300,
+                @font_size: 13px,
+                @line_height: 16px
+            );
+
+            &::placeholder {
+                color: @placeholder_dark_gray;
+            }
+
+            &:focus-visible {
+                border: @border_orange_pink;
+                outline: none;
+            }
+        }
+
+        &__btn {
+            padding: 10px 14px 11px;
+            margin: 2px 0 0;
+            border: @border_gray;
+            box-sizing: border-box;
+            .text_base(
+                @font_weight: 300,
+                @font_size: 11px,
+                @line_height: 13px,
+                @color: @color_gray,
+                @text_transform: uppercase
+            );
+            background-color: transparent;
+
+            &:hover {
+                border: @border_dark_pink;
+                background-color: @color_pink;
+                color: @color_white;
+            }
+
+            &:active {
+                border: @border_dark_pink;
+                background-color: @color_white;
+                color: @color_pink;
+            }
+        }
+    }
+
+    &__confirmation_unit {
+        .limited_size(360px);
+        padding: 38px 43px 42px;
+        margin: 58px 0 0;
+        background-color: @background_light_beige;
+
+        &__subtotal {
+            margin: 0 0 12px;
+            text-align: right;
+            .text_base(
+                @font_size: 11px,
+                @line_height: 13px,
+                @color: @text_graphite,
+                @text_transform: uppercase
+                );
+            }
+
+        &__total {
+            text-align: right;
+            .text_base(
+                @font_weight: 300,
+                @font_size: 16px,
+                @line_height: 19px,
+                @color: @color_light_black,
+                @text_transform: uppercase
+            );
+          }
+
+        &__subtotal_price {
+            margin: 0 0 0 15px;
+        }
+
+        &__total_price {
+            margin: 0 0 0 17px;
+            color: @text_pink;
+        }
+
+        &__divider {
+            margin: 21px 0 17px;
+            border: @border_dark_gray;
+        }
+
+        &__btn {
+            background: @color_pink;
+            width: 100%;
+            padding: 15px 0 16px;
+            border: none;
+            box-sizing: border-box;
+            text-align: center;
+            .text_base(
+                @font_weight: 300,
+                @font_size: 16px,
+                @line_height: 19px,
+                @color: @color_white,
+                @text_transform: uppercase
+            );
+
+            &:hover {
+                background-color: @color_white;
+                color: @color_pink;
+                border: @border_orange_pink;
+            }
+
+            &:active {
+                background-color: @color_pink;
+                color: @color_white;
+            }
+        }
+    }
+}
+
+#close-btn-product3,
+#close-btn-product14,
+#close-btn-product3:checked ~ .product_3,
+#close-btn-product14:checked ~ .product_14 {
+    display: none;
+}

@@ -1,3 +1,23 @@
+@keyframes smooth_show_element {
+  from {
+    opacity: 0;
+    height: 58px;
+  }
+  to {
+    opacity: 1;
+    height: 96px;
+  }
+}
+@keyframes smooth_show_text {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: 38px;
+  }
+}
 .banner {
   background-color: #f1e4e6;
 }
@@ -29,10 +49,11 @@
   position: absolute;
   left: -28px;
   width: 12px;
-  height: 96px;
+  height: 58px;
   box-sizing: border-box;
   background-color: #f16d7f;
   content: "";
+  animation: smooth_show_element 1s .5s forwards;
 }
 .banner__text_small {
   display: block;
@@ -42,6 +63,8 @@
   line-height: 38px;
   color: inherit;
   text-transform: uppercase;
+  opacity: 0;
+  animation: smooth_show_text 1s .5s forwards;
 }
 .banner__text_pink {
   color: #f16d7f;
@@ -340,15 +363,18 @@
   color: #222222;
   text-transform: uppercase;
 }
-.cart__notation__close_btn {
+.cart__notation__close_icon {
   float: right;
   fill: #656565;
   width: 18px;
 }
-.cart__notation_label:hover .cart__notation__close_btn {
+.cart__notation_link:hover .cart__notation__close_icon {
   fill: #f16d7f;
+  transition: transform 1s;
+  transform: rotate(180deg);
+  transform-origin: center center;
 }
-.cart__notation_label:hover .cart__notation__close_btn {
+.cart__notation_link:active .cart__notation__close_icon {
   fill: #ff6a6a;
 }
 .cart__subnotation_txt {
@@ -578,12 +604,18 @@
   display: none;
 }
 #filters__menu_switch:checked ~ .filters__menu_container .filters__menu_list {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease .3s;
+  position: initial;
 }
 #filters__menu_switch:checked ~ .filters__menu_container {
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   margin: -13px 0 0;
   padding: 13px 16px 0;
+  max-height: 1000px;
+  transition: max-height 1s ease;
 }
 .filters__menu {
   float: left;
@@ -596,6 +628,7 @@
   box-sizing: border-box;
   background: #ffffff;
   z-index: 999;
+  max-height: 0;
 }
 .filters__menu_label {
   display: block;
@@ -630,7 +663,11 @@
   text-transform: uppercase;
 }
 .filters__menu_list {
-  display: none;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all .5s ease;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -674,7 +711,12 @@
   color: #000000;
 }
 .filters__menu_sublist {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition-delay: 4s;
+  transition: all .5s ease;
+  position: absolute;
   margin: 24px 0 0;
   padding: 0 0 0 17px;
   box-sizing: border-box;
@@ -710,7 +752,10 @@
 #sub-menu-category:checked ~ .filters__menu_sublist,
 #sub-menu-brand:checked ~ .filters__menu_sublist,
 #sub-menu-designer:checked ~ .filters__menu_sublist {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  position: initial;
 }
 .filters__switch {
   display: flex;
@@ -758,10 +803,15 @@
   display: none;
 }
 #filters__size_switch:checked ~ .filters__switch_container {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 .filters__switch_container {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all .3s ease;
   position: absolute;
   width: 79px;
   height: 103px;
@@ -900,10 +950,15 @@ body {
   display: none;
 }
 .header #header__menu_switch:checked ~ .header__menu_container {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 .header__menu_container {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all .3s ease;
   position: absolute;
   justify-content: left;
   top: 76px;
@@ -931,8 +986,17 @@ body {
 .header__menu_list__item_title {
   margin: 0 0 24px;
 }
-.header__menu_list__close_btn {
+.header__menu_list__close_icon {
   fill: #6f6e6e;
+}
+.header__menu_list__close_icon:hover {
+  transition: transform 1s;
+  transform: rotate(180deg);
+  transform-origin: center center;
+  fill: #f16d7f;
+}
+.header__menu_list__close_icon:active {
+  fill: #ff6a6a;
 }
 .header__menu_list__title {
   text-decoration: none;

@@ -75,17 +75,18 @@
             );
         }
 
-        &__close_btn {
+        &__close_icon {
             float: right;
             fill: @text_darkest_gray;
             width: 18px;
         }
 
-        &_label:hover &__close_btn {
+        &_link:hover &__close_icon {
             fill: @color_pink;
+            .degree_rotation(180deg);
         }
 
-        &_label:hover &__close_btn {
+        &_link:active &__close_icon {
             fill: @color_orange_pink;
         }
     }

@@ -6,13 +6,19 @@
     }
 
     #filters__menu_switch:checked ~ &__menu_container &__menu_list {
-        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 1s ease .3s;
+        position: initial;
     }
 
     #filters__menu_switch:checked ~ &__menu_container {
         box-shadow: 6px 4px 35px @color_rgb_light_black;
         margin: -13px 0 0;
         padding: 13px 16px 0;
+        max-height: 1000px;
+        transition: max-height 1s ease;
     }
 
     &__menu {
@@ -24,6 +30,7 @@
             .limited_size(360px);
             background: @color_white;
             z-index: 999;
+            max-height: 0;
         }
 
         &_label {
@@ -63,7 +70,12 @@
         }
 
         &_list {
-            display: none;
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all .5s ease;
+
             margin: 0;
             padding: 0;
             list-style: none;
@@ -118,7 +130,13 @@
         }
 
         &_sublist {
-            display: none;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition-delay: 4s;
+            transition: all .5s ease;
+            position: absolute;
+
             margin: 24px 0 0;
             padding: 0 0 0 17px;
             box-sizing: border-box;
@@ -150,7 +168,10 @@
         #sub-menu-category:checked ~ &_sublist,
         #sub-menu-brand:checked ~ &_sublist,
         #sub-menu-designer:checked ~ &_sublist {
-            display: block;
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+            position: initial;
         }
 
     }
@@ -197,11 +218,17 @@
         }
 
         #filters__size_switch:checked ~ &_container {
-            display: block;
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
         }
 
         &_container {
-            display: none;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all .3s ease;
+
             position: absolute;
             .strict_size(79px, 103px);
             padding: 7px 10px;

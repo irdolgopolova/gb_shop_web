@@ -82,3 +82,9 @@
         color: @active_color;
     }
 }
+
+.degree_rotation(@degree, @delay:1s) {
+    transition: transform @delay;
+    transform: rotate(180deg);
+    transform-origin: center center;
+}

@@ -75,17 +75,18 @@
             );
         }
 
-        &__close_btn {
+        &__close_icon {
             float: right;
             fill: @text_darkest_gray;
             width: 18px;
         }
 
-        &_label:hover &__close_btn {
+        &_link:hover &__close_icon {
             fill: @color_pink;
+            .degree_rotation(180deg);
         }
 
-        &_label:hover &__close_btn {
+        &_link:active &__close_icon {
             fill: @color_orange_pink;
         }
     }
@@ -112,7 +113,7 @@
                 @line_height: 22px,
                 @color: @text_darkest_gray,
             );
-            text-align: center;
+            text-align: right;
 
             &:focus-visible {
                 border: @border_orange_pink;
@@ -255,11 +256,4 @@
             }
         }
     }
-}
-
-#close-btn-product3,
-#close-btn-product14,
-#close-btn-product3:checked ~ .product_3,
-#close-btn-product14:checked ~ .product_14 {
-    display: none;
 }

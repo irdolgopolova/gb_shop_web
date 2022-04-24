@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-
+    <title>Registration</title>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -34,7 +33,6 @@
                     <input class="header__search_input" id="search-btn" type="search" />
                 </form>
             </div>
-
             <div class="header__right_part">
                 <nav class="header__menu">
                     <label class="header__menu_btn" for="header__menu_switch">
@@ -74,7 +72,6 @@
                                     </li>
                                 </ul>
                             </li>
-
                             <li class="header__menu_list__item">
                                 <a href="#" class="header__menu_list__title">woman</a>
                                 <ul class="header__menu_sublist">
@@ -95,7 +92,6 @@
                                     </li>
                                 </ul>
                             </li>
-
                             <li class="header__menu_list__item">
                                 <a href="#" class="header__menu_list__title">kids</a>
                                 <ul class="header__menu_sublist">
@@ -127,7 +123,7 @@
                             d="M14.5 19.937C19 19.937 22.656 15.464 22.656 9.968C22.656 4.472 19 0 14.5 0C13.3631 0.0217413 12.2463 0.303398 11.2351 0.823397C10.2239 1.34339 9.34507 2.08794 8.66602 3C7.12663 4.99573 6.30819 7.45381 6.34399 9.974C6.34399 15.465 10 19.937 14.5 19.937ZM14.5 1.813C18 1.813 20.844 5.472 20.844 9.969C20.844 14.466 17.998 18.125 14.5 18.125C11.002 18.125 8.15603 14.465 8.15503 9.969C8.15403 5.473 11 1.813 14.5 1.813ZM20.844 18.125C20.6036 18.125 20.373 18.2205 20.203 18.3905C20.033 18.5605 19.9375 18.7911 19.9375 19.0315C19.9375 19.2719 20.033 19.5025 20.203 19.6725C20.373 19.8425 20.6036 19.938 20.844 19.938C22.526 19.9399 24.1386 20.6088 25.3279 21.7982C26.5172 22.9875 27.1861 24.6 27.188 26.282C27.1875 26.5221 27.0918 26.7523 26.922 26.9221C26.7522 27.0918 26.5221 27.1875 26.282 27.188H2.71997C2.47985 27.1875 2.24975 27.0918 2.07996 26.9221C1.91016 26.7523 1.81449 26.5221 1.81396 26.282C1.81608 24.6001 2.48517 22.9877 3.67444 21.7985C4.86371 20.6092 6.47608 19.9401 8.15796 19.938C8.39824 19.938 8.62868 19.8425 8.79858 19.6726C8.96849 19.5027 9.06396 19.2723 9.06396 19.032C9.06396 18.7917 8.96849 18.5613 8.79858 18.3914C8.62868 18.2215 8.39824 18.126 8.15796 18.126C5.99541 18.1279 3.92201 18.9875 2.39258 20.5164C0.863144 22.0453 0.00264777 24.1185 0 26.281C0.000794067 27.0019 0.287502 27.693 0.797241 28.2027C1.30698 28.7125 1.99811 28.9992 2.71899 29H26.282C27.0027 28.9989 27.6936 28.7121 28.2031 28.2024C28.7126 27.6927 28.9992 27.0017 29 26.281C28.9974 24.1187 28.1372 22.0457 26.6083 20.5168C25.0793 18.9878 23.0063 18.1276 20.844 18.125Z" />
                     </svg>
                 </a>
-                <a href="#" class="header__basket_btn">
+                <a href="cart.html" class="header__basket_btn">
                     <svg class="header__basket_icon" width="32" height="29" viewBox="0 0 32 29"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -143,108 +139,81 @@
         <section class="breadcrumb">
             <div class="breadcrumb__container container">
                 <h2 class="breadcrumb__title">
-                    shopping cart
+                    registration
                 </h2>
             </div>
         </section>
-        <section class="cart__basket_list">
-            <div class="order__container container">
-                <div class="cart__product_list">
-                    <div class="cart__product_list__item product_3">
-                        <article class="cart__product_list__card">
-                            <div class="cart__block_img">
-                                <img class="cart__img" src="img/product_3.png" alt="product_3">
-                            </div>
-                            <div class="cart__notation">
-                                <a href="#" class="cart__notation_link">
-                                    <svg class="cart__notation__close_icon" viewBox="0 0 13 13"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 0 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z" />
-                                    </svg>
-                                </a>
-                                <h4 class="cart__notation_title">mango people t-shirt</h4>
-                                <div class="cart__subnotation">
-                                    <p class="cart__subnotation_txt">
-                                        <span class="cart__subnotation_txt__title">Price:</span>
-                                        <span class="cart__subnotation_txt__price">$300</span>
-                                    </p>
-                                    <p class="cart__subnotation_txt">
-                                        <span class="cart__subnotation_txt__title">Color:</span>
-                                        <span class="cart__subnotation_txt__value">Red</span>
-                                    </p>
-                                    <p class="cart__subnotation_txt">
-                                        <span class="cart__subnotation_txt__title">Size:</span>
-                                        <span class="cart__subnotation_txt__value">Xl</span>
-                                    </p>
-                                    <p class="cart__subnotation_txt">
-                                        <span class="cart__subnotation_txt__title">Quantity:</span>
-                                        <input class="cart__subnotation_input" type="number" value="2">
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="cart__product_list__item product_14">
-                        <article class="cart__product_list__card">
-                            <div class="cart__block_img">
-                                <img class="cart__img" src="img/product_14.png" alt="product_14">
-                            </div>
-                            <div class="cart__notation">
-                                <a href="#" class="cart__notation_link">
-                                    <svg class="cart__notation__close_icon" viewBox="0 0 13 13"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 0 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z" />
-                                    </svg>
-                                </a>
-                                <h4 class="cart__notation_title">mango people t-shirt</h4>
-                                <div class="cart__subnotation">
-                                    <p class="cart__subnotation_txt">
-                                        <span class="cart__subnotation_txt__title">Price:</span>
-                                        <span class="cart__subnotation_txt__price">$300</span>
-                                    </p>
-                                    <p class="cart__subnotation_txt">
-                                        <span class="cart__subnotation_txt__title">Color:</span>
-                                        <span class="cart__subnotation_txt__value">Red</span>
-                                    </p>
-                                    <p class="cart__subnotation_txt">
-                                        <span class="cart__subnotation_txt__title">Size:</span>
-                                        <span class="cart__subnotation_txt__value">Xl</span>
-                                    </p>
-                                    <p class="cart__subnotation_txt">
-                                        <span class="cart__subnotation_txt__title">Quantity:</span>
-                                        <input class="cart__subnotation_input" type="number" value="2">
-                                    </p>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="cart__product_list__group_btn">
-                        <button class="cart__product_list__btn">clear shopping cart</button>
-                        <button class="cart__product_list__btn">continue shopping</button>
-                    </div>
-                </div>
-                <div class="cart__order_placement">
-                    <h6 class="cart__order_placement__title_form">shipping address</h6>
-                    <form class="cart__order_placement__form" action="#">
-                        <input class="cart__order_placement__input" type="text" placeholder="Bangladesh">
-                        <input class="cart__order_placement__input" type="text" placeholder="State">
-                        <input class="cart__order_placement__input" type="text" placeholder="Postcode / Zip">
-                        <button class="cart__order_placement__btn" type="submit">get a quote</button>
+        <section class="registration">
+            <div class="registration__container container">
+                <div class="registration__form_container">
+                    <form action="#">
+                        <fieldset class="registration__group_input">
+                            <legend class="registration__group_title">Your Name</legend>
+                            <input class="registration__form_input" type="text" placeholder="First Name">
+                            <input class="registration__form_input" type="text" placeholder="Last Name">
+                        </fieldset>
+                        <fieldset class="registration__group_radio_btn">
+                            <input id="registration-male" class="registration__form_radio_input" type="radio"
+                                name="radio-btn">
+                            <label class="registration__form_radio_label" for="registration-male">Male</label>
+                            <input id="registration-female" class="registration__form_radio_input" type="radio"
+                                name="radio-btn">
+                            <label class="registration__form_radio_label" for="registration-female">Female</label>
+                        </fieldset>
+                        <fieldset class="registration__group_input">
+                            <legend class="registration__group_title">Login details</legend>
+                            <input class="registration__form_input" type="email" placeholder="Email">
+                            <input class="registration__form_input" type="password" placeholder="Password">
+                        </fieldset>
+                        <p class="registration__hint">
+                            Please use 8&nbsp;or more characters, with at&nbsp;least 1&nbsp;number and a&nbsp;mixture
+                            of&nbsp;uppercase and lowercase letters
+                        </p>
+                        <button class="registration__submit_btn" type="submit">
+                            <span class="registration__submit_btn__txt">join now</span>
+                            <svg class="registration__submit_btn__icon" width="17" height="10" viewBox="0 0 17 10"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z" />
+                                <path
+                                    d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z" />
+                            </svg>
+                        </button>
                     </form>
-                    <div class="cart__confirmation_unit">
-                        <p class="cart__confirmation_unit__subtotal">
-                            <span class="cart__confirmation_unit__subtotal_title">sub total</span>
-                            <span class="cart__confirmation_unit__subtotal_price">$900</span>
-                        </p>
-                        <p class="cart__confirmation_unit__total">
-                            <span class="cart__confirmation_unit__total_title">grand total</span>
-                            <span class="cart__confirmation_unit__total_price">$900</span>
-                        </p>
-                        <hr class="cart__confirmation_unit__divider">
-                        <button class="cart__confirmation_unit__btn" type="button">proceed to checkout</button>
-                    </div>
+                </div>
+                <div class="registration__perks_container">
+                    <h3 class="registration__perks_title">loyalty has its perks</h3>
+                    <p class="registration__perks_notation">
+                        Get in&nbsp;on&nbsp;the loyalty program where you can earn points and unlock serious perks.
+                        Starting with these as&nbsp;soon as&nbsp;you join:
+                    </p>
+                    <ul class="registration__perks_list">
+                        <li class="registration__perks_list__item">
+                            <span class="registration__perks_list__label">
+                                15% off welcome offer
+                            </span>
+                        </li>
+                        <li class="registration__perks_list__item">
+                            <span class="registration__perks_list__label">
+                                Free shipping, returns and exchanges on&nbsp;all orders
+                            </span>
+                        </li>
+                        <li class="registration__perks_list__item">
+                            <span class="registration__perks_list__label">
+                                $10 off a&nbsp;purchase on&nbsp;your birthday
+                            </span>
+                        </li>
+                        <li class="registration__perks_list__item">
+                            <span class="registration__perks_list__label">
+                                Early access to&nbsp;products
+                            </span>
+                        </li>
+                        <li class="registration__perks_list__item">
+                            <span class="registration__perks_list__label">
+                                Exclusive offers &amp;&nbsp;rewards
+                            </span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>

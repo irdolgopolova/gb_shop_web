@@ -25,14 +25,19 @@
         &::before {
             position: absolute;
             left: -28px;
-            .strict_size (12px, 96px);
+            .strict_size (12px, 58px);
             background-color: @color_pink;
             content: "";
+
+            animation: smooth_show_element 1s .5s forwards;
         }
 
         &_small {
             display: block;
             .text_base(400, 32px, 38px, inherit, uppercase);
+
+            opacity: 0;
+            animation: smooth_show_text 1s .5s forwards;
         }
 
         &_pink {

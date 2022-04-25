@@ -15,11 +15,6 @@
         );
     }
 
-    &__chain_list {
-        .flex_base();
-        list-style-type: none;
-    }
-
     &__chain {
         &_list {
             .flex_base();
@@ -63,6 +58,24 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1223px) {
+
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .breadcrumb {
+        &__container {
+            .flex_base(@flex_direction:column, @align_items:center);
+            box-sizing: border-box;
+            padding: 24px 0 46px;
+        }
+
+        &__chain {
+            margin: 32px 0 0;
         }
     }
 }

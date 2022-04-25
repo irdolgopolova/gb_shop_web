@@ -34,9 +34,6 @@
         }
 
         &_label {
-            display: block;
-            width: 100%;
-            margin: 0 0 16px;
             padding: 0;
             border: none;
             text-align: left;
@@ -71,12 +68,11 @@
 
         &_list {
             position: absolute;
+            margin: 16px 0 0;
             visibility: hidden;
             opacity: 0;
             transform: translateY(-10px);
             transition: all .5s ease;
-
-            margin: 0;
             padding: 0;
             list-style: none;
 
@@ -265,4 +261,54 @@
 #filters__size_switch,
 #filters__quantity_switch {
     display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1223px) {
+    .filters {
+        margin: 24px 0 0;
+
+        &__switch {
+            justify-content: right;
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .filters {
+        margin: 24px 0 0;
+
+        .container {
+            max-width: 359px;
+        }
+
+
+        &__menu {
+            &_label {
+                &__link_txt {
+                    display: none;
+                }
+
+                &__icon  {
+                    transform: scale(2.5);
+                }
+            }
+        }
+
+        &__switch {
+            justify-content: right;
+
+            &_item {
+                margin: 0 24px 0 0;
+            }
+
+            &_label {
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+            &_icon {
+                margin: 0 0 0 8px;
+            }
+        }
+    }
 }

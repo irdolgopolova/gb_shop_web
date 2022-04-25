@@ -25,7 +25,6 @@
 
         &_list {
             .flex_base(@justify_content:space-between);
-            margin: 48px 0 0;
             flex-wrap: wrap;
             list-style-type: none;
         }
@@ -159,12 +158,12 @@
         &__card {
             margin: 0 0 17px;
 
-            &:nth-last-child(-n+2) {
-                margin-bottom: 0;
+            &:nth-child(3) {
+                display: none;
             }
 
-            &_list {
-                margin: 73px 0 0;
+            &:nth-last-child(-n+2) {
+                margin-bottom: 0;
             }
         }
 
@@ -192,12 +191,12 @@
             max-width: 359px;
             margin: 0 0 16px;
 
-            &:last-child {
-                margin-bottom: 0;
+            &:nth-child(3) {
+                display: none;
             }
 
-            &_list {
-                margin: 65px 0 0;
+            &:last-child {
+                margin-bottom: 0;
             }
         }
 

@@ -370,7 +370,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 1223px) {
     .container {
-        max-width: 736px; //вынести в переменную
+        max-width: @max_width_content_tablet;
     }
 
     .header {
@@ -411,7 +411,7 @@ body {
 
 @media (min-width: 375px) and (max-width: 767px) {
     .container {
-        max-width: 343px; //вынести в переменную
+        max-width: @max_width_content_phone;
     }
 
     .header {

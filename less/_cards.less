@@ -13,7 +13,7 @@
         }
 
         &_additional {
-            margin: 6px 0 0;
+            margin: 6px 0 48px;
             .text_base(@color: @text_gray);
         }
     }
@@ -149,18 +149,12 @@
     .product_list {
         margin: 155px 0 0;
 
-        &__text {
-            &_additional {
-                margin: 3px 0 0;
-            }
+        &__text_additional {
+            margin: 3px 0 73px;
         }
 
         &__card {
             margin: 0 0 17px;
-
-            &:nth-child(3) {
-                display: none;
-            }
 
             &:nth-last-child(-n+2) {
                 margin-bottom: 0;
@@ -169,6 +163,12 @@
 
         &__btn {
             margin: 32px 0 0;
+        }
+    }
+
+    .product_catalog .product_list {
+        &__card:nth-child(3) {
+            display: none;
         }
     }
 }
@@ -181,19 +181,13 @@
             max-width: @max_width_content_phone_small_padding;
         }
 
-        &__text {
-            &_additional {
-                margin: 3px 0 0;
-            }
+        &__text_additional {
+            margin: 3px 0 65px;
         }
 
         &__card {
             max-width: 359px;
             margin: 0 0 16px;
-
-            &:nth-child(3) {
-                display: none;
-            }
 
             &:last-child {
                 margin-bottom: 0;
@@ -205,4 +199,9 @@
         }
     }
 
+    .product_catalog .product_list {
+        &__card:nth-child(3) {
+            display: none;
+        }
+    }
 }

@@ -476,9 +476,11 @@
   text-transform: uppercase;
 }
 .cart__notation__close_icon {
-  float: right;
   fill: #656565;
   width: 18px;
+}
+.cart__notation_link {
+  float: right;
 }
 .cart__notation_link:hover .cart__notation__close_icon {
   fill: #f16d7f;

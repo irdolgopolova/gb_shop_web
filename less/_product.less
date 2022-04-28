@@ -1,6 +1,6 @@
 .product {
     &_catalog {
-        margin-top: 65px;
+        margin: 65px 0 0;
     }
 
     &_introduction {
@@ -138,5 +138,25 @@
 
     .product_list__card_list {
         margin: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1223px) {
+    .product {
+        &_catalog {
+            margin: 40px 0 0;
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .product {
+        &_catalog {
+            margin: 32px 0 0;
+
+            .container {
+                max-width: @max_width_content_phone_small_padding;
+            }
+        }
     }
 }

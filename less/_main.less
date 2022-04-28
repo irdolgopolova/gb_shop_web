@@ -367,3 +367,124 @@ body {
         }
     }
 }
+
+@media (min-width: 768px) and (max-width: 1223px) {
+    .container {
+        max-width: @max_width_content_tablet;
+    }
+
+    .header {
+        min-height: 74px;
+
+        &__container {
+            padding: 17px 32px 16px;
+        }
+
+        &__menu_container {
+            top: 74px;
+        }
+    }
+
+    .subscribe {
+        &__container {
+            .flex_base(@flex_direction:column, @align_items:center);
+            padding: 65px 0 140px;
+        }
+
+        &__form {
+            margin: 21px 0 0;
+
+            &_wrp {
+                margin: 74px 0 0;
+            }
+
+            &_header {
+                line-height: 38px;
+            }
+        }
+    }
+
+    .footer {
+        &__bottom_part {
+            &_container {
+                padding: 0 32px;
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .container {
+        max-width: @max_width_content_phone;
+    }
+
+    .header {
+        min-height: 74px;
+
+        &__profile_btn,
+        &__basket_btn {
+            display: none;
+        }
+
+        &__menu_container {
+            top: 74px;
+        }
+    }
+
+    .subscribe {
+        &__container {
+            .flex_base(@flex_direction:column, @align_items:center);
+            padding: 65px 0 110px;
+        }
+
+        &__info {
+            &_img {
+                margin: 0 0 21px;
+            }
+
+            &_txt {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
+        &__form {
+            margin: 22px 0 0;
+
+            &_wrp {
+                margin: 66px 0 0;
+                text-align: center;
+            }
+
+            &_header {
+                line-height: 37px;
+            }
+
+            &_text {
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+            &_email {
+                max-width: 245px;
+            }
+
+            &_btn {
+                max-width: 96px;
+            }
+        }
+    }
+
+    .footer {
+        &__bottom_part {
+            padding: 43px 0 9px;
+            &_container {
+                flex-direction: column-reverse;
+            }
+        }
+
+        &__copirate_txt {
+            margin: 40px 0 0;
+        }
+    }
+}

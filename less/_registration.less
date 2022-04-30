@@ -68,6 +68,10 @@
             .strict_size(17px, 17px);
             margin: 0 10px 0 0;
 
+            &:nth-child(5) {
+                display: none;
+            }
+
             &:nth-child(n+2) {
                 margin-left: 22px;
             }
@@ -80,6 +84,10 @@
                 @line_height: 13px,
                 @color: @color_black,
             );
+
+            &:last-child {
+                display: none;
+            }
         }
     }
 
@@ -165,5 +173,105 @@
             }
         }
 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1223px) {
+    .registration {
+        margin: 40px 0 96px;
+
+        &__form_radio {
+            &_input:nth-child(5) {
+                display: block;
+            }
+
+            &_label:last-child {
+                display: block;
+            }
+        }
+
+        &__perks {
+            &_container {
+                margin: 0 0 0 22px;
+            }
+
+            &_title {
+                margin: 0 0 32px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            &_notation {
+                margin: 0 0 22px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            &_list {
+                list-style-position: outside;
+                margin: 0 0 0 27px;
+
+                &__item {
+                    margin: 0 0 20px;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+
+        }
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .registration {
+        margin: 40px 0 0;
+
+        .container {
+            max-width: @max_width_content_phone_small_padding;
+        }
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__perks {
+            &_container {
+                margin: 40px 0 100px;
+            }
+
+            &_title {
+                margin: 0 0 32px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            &_notation {
+                margin: 0 0 22px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            &_list {
+                list-style-position: outside;
+                margin: 0 0 0 27px;
+
+                &__item {
+                    margin: 0 0 21px;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+
+        &__form_radio {
+            &_input:nth-child(5) {
+                display: block;
+            }
+
+            &_label:last-child {
+                display: block;
+            }
+        }
     }
 }

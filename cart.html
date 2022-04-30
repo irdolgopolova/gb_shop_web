@@ -141,7 +141,7 @@
 
     <main>
         <section class="breadcrumb">
-            <div class="breadcrumb__container container">
+            <div class="breadcrumb__container breadcrumb__container_center container">
                 <h2 class="breadcrumb__title">
                     shopping cart
                 </h2>
@@ -221,29 +221,31 @@
                         </article>
                     </div>
                     <div class="cart__product_list__group_btn">
-                        <button class="cart__product_list__btn">clear shopping cart</button>
-                        <button class="cart__product_list__btn">continue shopping</button>
+                        <button class="cart__product_list__btn">Clear shopping cart</button>
+                        <button class="cart__product_list__btn">Continue shopping</button>
                     </div>
                 </div>
                 <div class="cart__order_placement">
                     <h6 class="cart__order_placement__title_form">shipping address</h6>
-                    <form class="cart__order_placement__form" action="#">
-                        <input class="cart__order_placement__input" type="text" placeholder="Bangladesh">
-                        <input class="cart__order_placement__input" type="text" placeholder="State">
-                        <input class="cart__order_placement__input" type="text" placeholder="Postcode / Zip">
-                        <button class="cart__order_placement__btn" type="submit">get a&nbsp;quote</button>
-                    </form>
-                    <div class="cart__confirmation_unit">
-                        <p class="cart__confirmation_unit__subtotal">
-                            <span class="cart__confirmation_unit__subtotal_title">sub total</span>
-                            <span class="cart__confirmation_unit__subtotal_price">$900</span>
-                        </p>
-                        <p class="cart__confirmation_unit__total">
-                            <span class="cart__confirmation_unit__total_title">grand total</span>
-                            <span class="cart__confirmation_unit__total_price">$900</span>
-                        </p>
-                        <hr class="cart__confirmation_unit__divider">
-                        <button class="cart__confirmation_unit__btn" type="button">proceed to&nbsp;checkout</button>
+                    <div class="cart__order_placement__container">
+                        <form class="cart__order_placement__form" action="#">
+                            <input class="cart__order_placement__input" type="text" placeholder="Bangladesh">
+                            <input class="cart__order_placement__input" type="text" placeholder="State">
+                            <input class="cart__order_placement__input" type="text" placeholder="Postcode / Zip">
+                            <button class="cart__order_placement__btn" type="submit">Get a&nbsp;quote</button>
+                        </form>
+                        <div class="cart__confirmation_unit">
+                            <p class="cart__confirmation_unit__subtotal">
+                                <span class="cart__confirmation_unit__subtotal_title">sub total</span>
+                                <span class="cart__confirmation_unit__subtotal_price">$900</span>
+                            </p>
+                            <p class="cart__confirmation_unit__total">
+                                <span class="cart__confirmation_unit__total_title">grand total</span>
+                                <span class="cart__confirmation_unit__total_price">$900</span>
+                            </p>
+                            <hr class="cart__confirmation_unit__divider">
+                            <button class="cart__confirmation_unit__btn" type="button">proceed to&nbsp;checkout</button>
+                        </div>
                     </div>
                 </div>
             </div>

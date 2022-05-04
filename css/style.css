@@ -198,6 +198,10 @@
     box-sizing: border-box;
     padding: 24px 0 46px;
   }
+  .breadcrumb__container_center {
+    justify-content: center;
+    padding: 24px 0;
+  }
   .breadcrumb__chain {
     margin: 32px 0 0;
   }
@@ -295,6 +299,9 @@
   width: 26px;
   padding: 0 11px 0 0;
   fill: #ffffff;
+}
+.product_list__card_link_img {
+  width: 100%;
 }
 .product_list__btn {
   margin: 48px 0 0;
@@ -636,6 +643,125 @@
 .cart__confirmation_unit__btn:active {
   background-color: #f16d7f;
   color: #ffffff;
+}
+@media (min-width: 768px) and (max-width: 1223px) {
+  .order__container {
+    flex-direction: column;
+  }
+  .cart__basket_list {
+    margin: 59px 0 0;
+  }
+  .cart__product_list {
+    max-width: 734px;
+  }
+  .cart__product_list__card {
+    max-width: 734px;
+  }
+  .cart__product_list__group_btn {
+    justify-content: space-around;
+    margin: 63px 88px 0;
+  }
+  .cart__subnotation_input {
+    text-align: center;
+  }
+  .cart__order_placement {
+    margin: 64px 0 128px;
+    max-width: 735px;
+  }
+  .cart__order_placement__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: normal;
+  }
+  .cart__order_placement__form {
+    width: 100%;
+    max-width: 360px;
+    box-sizing: border-box;
+  }
+  .cart__order_placement__title_form {
+    margin: 0 0 20px;
+  }
+  .cart__confirmation_unit {
+    margin: 0;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .order__container {
+    flex-direction: column;
+  }
+  .cart__basket_list .container {
+    max-width: 359px;
+  }
+  .cart__basket_list {
+    margin: 39px 0 0;
+  }
+  .cart__product_list {
+    max-width: 358px;
+  }
+  .cart__product_list__card {
+    max-width: 358px;
+    margin: 0 0 33px;
+  }
+  .cart__product_list__btn {
+    padding: 9px 37px;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: none;
+  }
+  .cart__product_list__group_btn {
+    margin: 30px 0 0;
+  }
+  .cart__img {
+    height: 100%;
+    max-height: 188px;
+    box-sizing: border-box;
+    max-width: 141px;
+  }
+  .cart__notation {
+    padding: 14px 12px 29px 21px;
+  }
+  .cart__notation_title {
+    width: 100%;
+    max-width: 140px;
+    box-sizing: border-box;
+    margin: 0 0 25px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .cart__notation_link {
+    line-height: 11px;
+  }
+  .cart__notation__close_icon {
+    width: 10px;
+  }
+  .cart__subnotation {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cart__subnotation_input {
+    max-width: 24px;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+  }
+  .cart__subnotation_txt {
+    margin: 0 0 3px;
+  }
+  .cart__order_placement {
+    margin: 48px 0 0;
+  }
+  .cart__order_placement__title_form {
+    margin: 0 0 20px;
+  }
+  .cart__order_placement__btn {
+    margin: 0;
+    padding: 10px 23px 11px;
+    text-transform: none;
+  }
+  .cart__confirmation_unit {
+    margin: 48px 0 96px;
+  }
 }
 .category {
   margin: 65px 0 0;
@@ -1022,6 +1148,9 @@
   .filters__switch {
     justify-content: right;
   }
+  .product_description .filters__switch {
+    justify-content: center;
+  }
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .filters {
@@ -1048,6 +1177,9 @@
   }
   .filters__switch_icon {
     margin: 0 0 0 8px;
+  }
+  .product_description .filters__switch {
+    justify-content: center;
   }
 }
 * {
@@ -1808,6 +1940,22 @@ body {
   .product_catalog {
     margin: 40px 0 0;
   }
+  .product_introduction__img {
+    height: 565px;
+    margin: 30px 0 29px;
+  }
+  .product_description {
+    margin: 0;
+  }
+  .recommended_products .product_list__card {
+    margin: 0;
+  }
+  .recommended_products .product_list__card:last-child {
+    display: none;
+  }
+  .recommended_products .product_list__card_list {
+    flex-direction: row-reverse;
+  }
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .product_catalog {
@@ -1815,6 +1963,44 @@ body {
   }
   .product_catalog .container {
     max-width: 359px;
+  }
+  .product_introduction__container {
+    position: relative;
+  }
+  .product_introduction__img {
+    height: 454px;
+    margin: 85px auto;
+  }
+  .product_introduction__link {
+    position: absolute;
+    top: 287px;
+  }
+  .product_introduction__link:last-child {
+    right: 0;
+  }
+  .product_description {
+    margin: 0;
+  }
+  .product_description__note {
+    margin: 32px auto 0;
+    padding: 0 25px;
+    line-height: 20px;
+  }
+  .product_description__divide {
+    margin: 32px 100px 45px;
+  }
+  .product_description .filters__switch_link_txt {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .product_list__btn_add {
+    margin: 63px auto 0;
+  }
+  .recommended_products {
+    padding: 65px 0 64px;
+  }
+  .recommended_products .product_list__card:nth-child(2) {
+    display: none;
   }
 }
 .registration {
@@ -1884,6 +2070,9 @@ body {
   box-sizing: border-box;
   margin: 0 10px 0 0;
 }
+.registration__form_radio_input:nth-child(5) {
+  display: none;
+}
 .registration__form_radio_input:nth-child(n+2) {
   margin-left: 22px;
 }
@@ -1894,6 +2083,9 @@ body {
   line-height: 13px;
   color: #000000;
   text-transform: none;
+}
+.registration__form_radio_label:last-child {
+  display: none;
 }
 .registration__hint {
   margin: 16px 0 39px;
@@ -1972,4 +2164,76 @@ body {
 }
 .registration__perks_list__label {
   margin: 0 0 0 11px;
+}
+@media (min-width: 768px) and (max-width: 1223px) {
+  .registration {
+    margin: 40px 0 96px;
+  }
+  .registration__form_radio_input:nth-child(5) {
+    display: block;
+  }
+  .registration__form_radio_label:last-child {
+    display: block;
+  }
+  .registration__perks_container {
+    margin: 0 0 0 22px;
+  }
+  .registration__perks_title {
+    margin: 0 0 32px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration__perks_notation {
+    margin: 0 0 22px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration__perks_list {
+    list-style-position: outside;
+    margin: 0 0 0 27px;
+  }
+  .registration__perks_list__item {
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .registration {
+    margin: 40px 0 0;
+  }
+  .registration .container {
+    max-width: 359px;
+  }
+  .registration__container {
+    flex-direction: column;
+  }
+  .registration__perks_container {
+    margin: 40px 0 100px;
+  }
+  .registration__perks_title {
+    margin: 0 0 32px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration__perks_notation {
+    margin: 0 0 22px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration__perks_list {
+    list-style-position: outside;
+    margin: 0 0 0 27px;
+  }
+  .registration__perks_list__item {
+    margin: 0 0 21px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration__form_radio_input:nth-child(5) {
+    display: block;
+  }
+  .registration__form_radio_label:last-child {
+    display: block;
+  }
 }

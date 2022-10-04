@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price": 10
+  },
+  {
+      "id": 2,
+      "name": "Product 2",
+      "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price": 20
+  },
+  {
+      "id": 3,
+      "name": "Product 3",
+      "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price": 30
+  },
+  {
+      "id": 4,
+      "name": "Product 4",
+      "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price": 40
+  },
+  {
+      "id": 5,
+      "name": "Product 5",
+      "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price": 50
+  },
+  {
+      "id": 6,
+      "name": "Product 6",
+      "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price": 60
+  },
+  {
+      "id": 7,
+      "name": "Product 7",
+      "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price": 70
+  },
+  {
+      "id": 8,
+      "name": "Product 8",
+      "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price": 80
+  },
+  {
+      "id": 9,
+      "name": "Product 9",
+      "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price": 90
+  }
+]

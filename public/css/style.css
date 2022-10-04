@@ -1407,6 +1407,19 @@ body {
   text-transform: none;
   text-align: center;
 }
+.header__basket_list {
+  position: absolute;
+  background-color: white;
+  z-index: 999;
+  top: 76px;
+  width: 100%;
+  max-width: 232px;
+  box-sizing: border-box;
+  padding: 16px 16px 16px 32px;
+  z-index: 999;
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
 .subscribe {
   min-height: 448px;
   background-image: url(../img/footer_background.png);
